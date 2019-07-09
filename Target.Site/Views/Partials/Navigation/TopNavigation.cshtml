@@ -10,3 +10,4 @@
 {
     <a class="nav-link @(item.IsAncestorOrSelf(Model.Content) ? "nav-link--active" : null)" href="@item.Url">@item.Name</a>
 }
+@Umbraco.RenderMacro("LoginStatus")
