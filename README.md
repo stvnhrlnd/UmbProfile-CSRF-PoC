@@ -5,6 +5,8 @@ This Visual Studio solution is a proof of concept for a CSRF vulnerability that 
 There are two projects in the solution:
 
 * A target Umbraco 7.12.4 site that contains the standard forms for registering, logging in, and updating your profile.
+  * Backoffice username: admin@example.com
+  * Backoffice password: Admin1234!
 * A basic MVC site with a CTA on the home page that submits a hidden form.
 
 To see the exploit in action perform the following steps:
