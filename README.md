@@ -18,3 +18,5 @@ To see the exploit in action perform the following steps:
 5. Head back to the edit profile page on the target site and refresh. Your profile should have been updated.
 
 This exploit takes advantage of the publicly exposed `HandleUpdateProfile` method on the `UmbProfileController` that ships with Umbraco. By constructing a form that POSTs to `/Umbraco/Surface/UmbProfile/HandleUpdateProfile` on the target site, we can modify the editable properties of the currently logged in member, which includes name and email.
+
+We can take the PoC a step further by adding some JavaScript to automatically submit the form, so the victim only needs to be tricked into visiting the page in the first place. See the *Index.cshtml* view for an example.

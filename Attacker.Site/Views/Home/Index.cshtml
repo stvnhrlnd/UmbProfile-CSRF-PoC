@@ -5,7 +5,7 @@
 <div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <form action="https://localhost:44305/Umbraco/Surface/UmbProfile/HandleUpdateProfile" method="post">
+    <form action="https://localhost:44305/Umbraco/Surface/UmbProfile/HandleUpdateProfile" method="post" id="form">
         <input name="profileModel.Name" type="hidden" value="Hackerman" />
         <input name="profileModel.Email" type="hidden" value="hackerman@nothing.com" />
         <input name="profileModel.MemberProperties[0].Alias" type="hidden" value="customProperty" />
@@ -13,3 +13,6 @@
         <button type="submit" class="btn btn-primary btn-lg">Learn more &raquo;</button>
     </form>
 </div>
+
+@* Uncomment the line below to force the form to automatically submit. *@
+@*<script>document.getElementById('form').submit()</script>*@
